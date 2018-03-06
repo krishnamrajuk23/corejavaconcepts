@@ -1,5 +1,12 @@
 package com.core.ploymorphism;
 
+/*
+ * In method overloading - same method name and different parameter list 
+ * Must change parameter list - Parameters or Parameter types or both should vary
+ * changing only return type does not matter 
+ * both instance and static methods are overloaded
+ * 
+ */
 public class MethodOverloading {
 	/*
 	 * When we have the value between short and int - it will be choosen int 

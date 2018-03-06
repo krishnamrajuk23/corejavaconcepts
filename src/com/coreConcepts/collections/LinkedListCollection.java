@@ -30,8 +30,7 @@ class Company implements Comparable{
 		this.name = name;
 		this.status = status;
 	}
-	
-	
+		
 	public String getName() {
 		return name;
 	}
