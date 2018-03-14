@@ -16,8 +16,8 @@ import java.io.IOException;
  * for example parent class does not handle method exception and when u try to handle exception in child class it throws
  * compile time exception. 
  * 
- * if Parent class method exception and child class method exception need to be same or parnet can have high level exception 
- * i.e, Exception and child class can have IOException, Classnotfound exception, etc is possible
+ * if Parent class method handle exception and child class method exception need to be same or parent class as to be high level exception 
+ * i.e,parent class as Exception for method and child class can have IOException, Classnotfound exception, etc for the same method which is overridden is possible
  *  
  */
 public class MethodOverriding {
@@ -31,7 +31,7 @@ public class MethodOverriding {
 }
 
 class Bank{
-	public Integer rateOfInterest() throws Exception{
+	protected Integer rateOfInterest() throws Exception{
 		return 0;
 	}	
 }
