@@ -15,7 +15,9 @@ package com.core.classObjAndMembers;
  * 
  * variable with no value is initialized to final key is know as blank final variable
  * Blank final variable is initialized only in constructor. 
- * If final variable is static then this will be initialized only in static block 
+ * If final variable is static then this will be initialized only in static block
+ * 
+ * Cannot create final constructor because it never be inherited
  */
 public class FinalKeyWordExample {
 
@@ -23,11 +25,11 @@ public class FinalKeyWordExample {
 
 //Blank final variable is initialized only in constructor
 
-class Test{
-	public final String name;
-	Test(){
-		name = "Raju";
+final class Test{
+	public final String name = "raju";
+	public final void test(){
+	//	name = "Raju";
 	}
-	
 }
+
 
