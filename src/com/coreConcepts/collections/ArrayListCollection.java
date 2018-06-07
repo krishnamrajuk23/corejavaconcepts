@@ -5,6 +5,17 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+/*
+ * ArrayList is growable in nature
+ * Best for fetching records, from first to nth location in array at same speed
+ * Because it implements RandomAccess(Interface)
+ * Bad practice for removing and Adding new values in array list
+ * It maintain the insertion order 
+ * It is not synchronize in nature - multiple operation can be done at a time
+ * Performance is fast in retrieval operations
+ * Not thread safe 
+ * */
+
 public class ArrayListCollection {
 	
 	private static List<String> arr = new ArrayList<>();
@@ -14,6 +25,7 @@ public class ArrayListCollection {
 		arr.add("jk");
 		
 		List<String> list = new ArrayList<>(); 
+		
 		list.add("222");
 		list.add("raju");
 		
